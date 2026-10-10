@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vladislav M. — Web-designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="hero">
+    <div class="hero__dark"></div>
+    <div class="hero__light"></div>
+
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#portfolio">Портфолио</a>
+      <a href="#services">Услуги</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <!-- Соцсети: скрыты, пока нет ссылок
+    <ul class="socials">
+      <li><a href="#">VK</a></li>
+      <li><a href="#">INST</a></li>
+      <li><a href="#">BE</a></li>
+    </ul>
+    -->
+
+    <div class="brand">
+      <h1 class="brand__name">Vladislav M.</h1>
+      <p class="brand__role">Web-designer</p>
+    </div>
+
+    <img class="hero__photo" src="img/portrait-cutout.png" alt="Портрет">
+
+    <a class="action action--top" href="#contacts">
+      <span>Написать сообщение</span>
+      <i class="action__icon action__icon--plus"></i>
+    </a>
+
+    <!-- Телефон: скрыт, пока нет номера
+    <a class="phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
+    -->
+
+    <a class="action action--bottom" href="#portfolio">
+      <span>Смотреть портфолио</span>
+      <i class="action__icon action__icon--arrow"></i>
+    </a>
+  </main>
+
+  <section id="about" class="about">
+    <div class="about__label">
+      <span class="about__num">01</span>
+      <span class="about__line"></span>
+    </div>
+    <div class="about__body">
+      <h2 class="about__title">Обо мне</h2>
+      <p class="about__text">
+        Я начинающий веб-дизайнер и только начинаю свой путь.
+        Это мой первый сайт — здесь постепенно будут появляться мои работы.
+      </p>
+      <a class="action action--inline" href="#portfolio">
+        <span>Смотреть портфолио</span>
+        <i class="action__icon action__icon--arrow"></i>
+      </a>
+    </div>
+  </section>
+</body>
+</html>
