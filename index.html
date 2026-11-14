@@ -3,76 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vladislav M. — Web-designer</title>
+  <title>Vladislav M. — веб-дизайнер</title>
+  <meta name="description" content="Владислав М. — начинающий веб-дизайнер. Личный сайт.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="hero">
-    <div class="hero__dark"></div>
-    <div class="hero__light"></div>
 
-    <nav class="nav">
+  <header class="header">
+    <a class="logo" href="#top">V<span>M</span></a>
+    <nav class="menu">
       <a href="#about">Обо мне</a>
-      <!-- Скрыты, пока нет разделов
-      <a href="#portfolio">Портфолио</a>
-      <a href="#services">Услуги</a>
-      <a href="#contacts">Контакты</a>
-      -->
+      <a href="#path">Путь</a>
+      <a href="#focus">Что изучаю</a>
+      <a href="#contact">Связь</a>
     </nav>
+  </header>
 
-    <!-- Соцсети: скрыты, пока нет ссылок
-    <ul class="socials">
-      <li><a href="#">VK</a></li>
-      <li><a href="#">INST</a></li>
-      <li><a href="#">BE</a></li>
-    </ul>
-    -->
-
-    <div class="brand">
-      <h1 class="brand__name">Vladislav M.</h1>
-      <p class="brand__role">Web-designer</p>
+  <!-- ===== Главный экран ===== -->
+  <section id="top" class="hero">
+    <div class="hero__text">
+      <p class="eyebrow reveal">Привет, я</p>
+      <h1 class="hero__name reveal">Vladislav<br>M.</h1>
+      <p class="hero__role reveal">Начинающий веб-дизайнер</p>
+      <a class="btn reveal" href="#about">
+        Познакомиться
+        <span class="btn__arrow" aria-hidden="true">→</span>
+      </a>
     </div>
 
-    <img class="hero__photo" src="img/portrait-cutout.png" alt="Портрет">
+    <div class="hero__visual">
+      <div class="hero__circle" aria-hidden="true"></div>
+      <img class="hero__photo" src="img/portrait-cutout.png" alt="Портрет Владислава">
+    </div>
 
-    <!-- Скрыто, пока нет раздела «Контакты»
-    <a class="action action--top" href="#contacts">
-      <span>Написать сообщение</span>
-      <i class="action__icon action__icon--plus"></i>
-    </a>
-    -->
+    <span class="hero__scroll" aria-hidden="true">Листай вниз</span>
+  </section>
 
-    <!-- Телефон: скрыт, пока нет номера
-    <a class="phone" href="tel:+79990000000">+7 (999) 000-00-00</a>
-    -->
-
-    <a class="action action--bottom" href="#about">
-      <span>Узнать обо мне</span>
-      <i class="action__icon action__icon--arrow"></i>
-    </a>
-  </main>
-
-  <section id="about" class="about">
-    <div class="about__label">
-      <span class="about__num">01</span>
-      <span class="about__line"></span>
+  <!-- ===== Обо мне ===== -->
+  <section id="about" class="section about">
+    <div class="section__head reveal">
+      <span class="section__num">01</span>
+      <h2 class="section__title">Обо мне</h2>
     </div>
     <div class="about__body">
-      <h2 class="about__title">Обо мне</h2>
-      <p class="about__text">
-        Я начинающий веб-дизайнер и только начинаю свой путь.
-        Это мой первый сайт — здесь постепенно будут появляться мои работы.
+      <p class="lead reveal">
+        Меня зовут Владислав. Я только начинаю свой путь в веб-дизайне
+        и учусь делать сайты, которые выглядят аккуратно и понятны с первого взгляда.
       </p>
-      <!-- Скрыто, пока нет раздела «Портфолио»
-      <a class="action action--inline" href="#portfolio">
-        <span>Смотреть портфолио</span>
-        <i class="action__icon action__icon--arrow"></i>
-      </a>
-      -->
+      <p class="reveal">
+        Этот сайт — одна из моих первых работ. Я собрал его сам и буду
+        развивать вместе с собой: по мере учёбы здесь будут появляться новые проекты.
+      </p>
     </div>
   </section>
+
+  <!-- ===== Путь ===== -->
+  <section id="path" class="section path">
+    <div class="section__head reveal">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Путь</h2>
+    </div>
+    <ol class="timeline">
+      <li class="timeline__item reveal">
+        <span class="timeline__mark">Старт</span>
+        <h3>Первые шаги в дизайне</h3>
+        <p>Решил заниматься веб-дизайном и начал разбираться в основах: композиция, типографика, цвет.</p>
+      </li>
+      <li class="timeline__item reveal">
+        <span class="timeline__mark">Сейчас</span>
+        <h3>Личный сайт</h3>
+        <p>Сделал и опубликовал этот сайт на GitHub Pages — от идеи до вёрстки.</p>
+      </li>
+      <li class="timeline__item timeline__item--next reveal">
+        <span class="timeline__mark">Дальше</span>
+        <h3>Первые проекты</h3>
+        <p>Собрать портфолио из реальных работ и показать их здесь.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== Что изучаю ===== -->
+  <section id="focus" class="section focus">
+    <div class="section__head reveal">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Что изучаю</h2>
+    </div>
+    <div class="cards">
+      <article class="card reveal">
+        <span class="card__icon" aria-hidden="true">Aa</span>
+        <h3>Визуальный дизайн</h3>
+        <p>Сетки, отступы, шрифтовые пары и контраст — то, из чего складывается аккуратная страница.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon" aria-hidden="true">&lt;/&gt;</span>
+        <h3>HTML и CSS</h3>
+        <p>Чтобы мои макеты превращались в живые страницы, которые работают и на телефоне.</p>
+      </article>
+      <article class="card reveal">
+        <span class="card__icon" aria-hidden="true">✦</span>
+        <h3>Удобство</h3>
+        <p>Как сделать так, чтобы человек на сайте сразу понимал, куда смотреть и что нажать.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Связь ===== -->
+  <section id="contact" class="section contact">
+    <p class="eyebrow reveal">Есть идея или совет?</p>
+    <h2 class="contact__title reveal">Давай <em>на связи</em></h2>
+    <a class="btn btn--light reveal" href="https://github.com/seagull-coder" target="_blank" rel="noopener">
+      GitHub
+      <span class="btn__arrow" aria-hidden="true">↗</span>
+    </a>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> Vladislav M.</span>
+    <a href="#top">Наверх ↑</a>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      items.forEach((el) => io.observe(el));
+    } else {
+      items.forEach((el) => el.classList.add('is-visible'));
+    }
+
+    const header = document.querySelector('.header');
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
 </body>
 </html>
